@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/article-preview-and-the-mobilefirst-approach-using-flex-and-grid-9v1heqcHn)
-- Live Site URL: [https://ericsalvi.github.io/article_preview_component/](https://ericsalvi.github.io/article_preview_component/)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/four-card-feature-section-using-gaps-within-flexbox-mobilefirst-css-ImSimoRKn)
+- Live Site URL: [https://ericsalvi.github.io/Four-card-feature-section-component/](https://ericsalvi.github.io/Four-card-feature-section-component/)
 
 ## My process
 
