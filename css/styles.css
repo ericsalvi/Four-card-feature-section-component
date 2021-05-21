@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+  --cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --gray-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 76px;
+  margin-top: 80px;
+  min-height: 100vh;
+}
+article {
+  padding: 0 32px;
+  margin: auto;
+  max-width: 375px;
+}
+header {
+  margin: 0 0 5rem;
+  text-align: center;
+}
+h1 {
+  color: var(--dark-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  line-height: 1.55;
+  margin: 0 0 1.1rem;
+}
+h1 span {
+  font-size: inherit;
+  font-weight: 600;
+}
+header p {
+  color: var(--gray-blue);
+  font-size: .96rem;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+  margin: 0;
+}
+.card__container {
+  background: white;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0px 0.75rem 1.75rem -15px hsl(229deg 60% 35% / 40%);
+          box-shadow: 0px 0.75rem 1.75rem -15px hsl(229deg 60% 35% / 40%);
+  margin-bottom: 26.5px;
+  overflow: hidden;
+}
+.col3 .card__container {
+  margin-bottom: 0;
+}
+.card__item {
+  padding: 28px;
+}
+.col1 .card__container:nth-child(1) .card__item {
+  border-top: 4px solid var(--cyan);
+}
+.col2 .card__container:nth-child(1) .card__item {
+  border-top: 4px solid var(--red);
+}
+.col2 .card__container:nth-child(2) .card__item {
+  border-top: 4px solid var(--orange);
+}
+.col3 .card__container:nth-child(1) .card__item {
+  border-top: 4px solid var(--blue);
+}
+.card__item h2 {
+  color: var(--dark-blue);
+  font-size: 1.3rem;
+  margin: 0 0 .5rem;
+}
+.card__item p {
+  color: var(--gray-blue);
+  font-size: .85rem;
+  letter-spacing: 0.2px;
+  line-height: 1.75;
+  margin: 0 0 34px;
+}
+.card__item img {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  width: auto;
+}
+footer {
+  font-size: .8rem;
+  margin: 30px auto;
+}
+footer a { 
+  color: var(--orange); 
+  font-size: inherit; 
+  -webkit-transition: color .3s; 
+  -o-transition: color .3s; 
+  transition: color .3s;
+}
+footer a:hover {
+  color: var(--red);
+}
+
+@media (min-width: 876px) {
+  body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: unset;
+    min-height: unset;
+  }
+  article {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2.33rem;
+    letter-spacing: 0.4px;
+    line-height: 1.48;
+    word-spacing: 1.8px;
+  }
+  header {
+    margin: 0 0 4.35rem;
+  }
+  header p {
+    width: 48%;
+    margin: 0 auto;
+  }
+  .card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .col.col2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .card__container {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+  .card__item {
+    padding: 32px;
+  }
+  .card__item h2 {
+    margin: 0 0 .75rem;
+  }
+  .card__item p {
+    margin: 0 0 38px;
+  }
+  .card__item img {
+    height: 64px;
+  }
+  body > footer {
+    margin: 30px 30px auto auto;
+  }
+}
